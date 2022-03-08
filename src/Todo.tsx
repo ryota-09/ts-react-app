@@ -1,11 +1,12 @@
-type Props = {
+type TodoType = {
   userId: number;
-  // id: number,
   title: string;
-  // computed: boolean
-}
+  completed: boolean;
+};
 
-export const Todo = (props: Props) => {
-  const { title, userId } = props;
-  return <p>{`${title}( ユーザー: ${userId} )`}</p>
+
+export const Todo = (props: TodoType) => {
+  const { title, userId, completed } = props;
+  const completeMark = completed ? "【完】" : "【未】";
+  return <p>{`${completeMark} ${title}( ユーザー: ${userId} )`}</p>
 }
