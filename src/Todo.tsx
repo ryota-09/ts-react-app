@@ -1,8 +1,8 @@
 type Props = {
-  userId: number,
-  id: number,
-  title: string,
-  computed: boolean
+  userId: number;
+  // id: number,
+  title: string;
+  // computed: boolean
 }
 
 export const Todo = (props: Props) => {
